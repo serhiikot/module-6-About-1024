@@ -1,0 +1,171 @@
+@import url(../css/common_style.css);
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1024px;
+    margin: auto;
+    padding: 75px 61px 25px 61px;
+    background-color: #fff;
+    border-top: 1px solid #f1f7fb;
+    border-bottom: 1px solid #f1f7fb;
+}
+/* Колонки */
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 72%;
+}
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+/* Информационные блоки */
+.agencyProfCont,
+.princilesList {
+    height: 515px;
+}   
+.offerInfo,
+.testimonal {
+    margin-top: 110px;
+}
+
+/* Заголовки */
+.leftColumn h2,
+.rightColumn h2 {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 32px;
+    color: #263555;
+    text-transform: uppercase;
+}
+.leftColumn h6,
+.rightColumn h6 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: "ArialRegular", sans-serif;
+    font-size: 15px;
+    color: #263555;
+}
+.topHeader,
+.offerHeader {
+    margin-bottom: 50px;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 32px;
+    color: #263555;
+    text-transform: uppercase;
+}
+
+/* Контент */
+/* Общее */
+.leftColumn p,
+.rightColumn p {
+    font-family: "ArialRegular", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #4e5050;
+    text-align: justify;
+    text-indent: 20px;
+}
+.princilesList p {
+    text-indent: 0;
+}
+.princilesList ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* Блок AGENCY PROFILE  */
+.leftColumn img {
+    float: left;
+    width: 354px;
+    height: 281px;
+    margin-right: 18px;
+    margin-bottom: 10px;
+}
+
+/* Блок OUR PRINCIPLES  */
+.principleHeaders,
+.principleInfo {
+    margin-left: 40px;
+}
+.principItem1:before,
+.principItem2:before,
+.principItem3:before { 
+    text-align: center;
+    line-height: 28px;
+    font-family: "ArialRegular", sans-serif;
+    font-size: 13px;
+    color: #fff; 
+    float: left;
+    width: 26px;
+    height: 28px;     
+    background-image: url(../img/list_marker.png);
+}
+.principItem1:before {
+    content: "1";
+}
+.principItem2:before {
+    content: "2";
+}
+.principItem3:before {
+    content: "3";
+}
+
+/* Блок WHAT WE OFFER  */
+.offerList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+    margin: 0;
+    padding-left: 0;
+    vertical-align: top;
+    font-family: "ArialRegular", sans-serif;
+    font-size: 15px;
+    list-style-type: none;
+    color: #263555;  
+}
+.offerListItem > a {
+    line-height: 38px;
+    text-decoration: none; 
+    color: #263555;
+}
+.offerListItem:before {
+    content: "🡒 \a0 \a0 \a \a0 \a0";
+    font-size: 10px;
+    color: #38afe5;   
+}
+
+/* Блок TESTIMONAL  */
+.notification {
+    width: 211px;
+    height: 219px;
+    background-image: url(../img/notification.png);
+}
+.notificationCont {
+    width: 170px;
+    height: 145px;
+    padding: 22px;
+    text-align: justify;
+}
+.notificationCont:before {
+    content: "“ \a0"; 
+}
+.notificationCont:after {  
+    content: "\a0 ”";  
+}  
+.authorName {
+    margin-top: 35px;
+    text-align: center;
+}
+.authorPosition {
+    text-align: center;
+}
