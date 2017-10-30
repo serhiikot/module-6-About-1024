@@ -145,25 +145,57 @@ main {
 }
 
 /* Блок TESTIMONAL  */
-.notification {
-    width: 211px;
-    height: 219px;
-    background-image: url(../img/notification.png);
+.notificationOutside {
+    position: relative; 
+    margin: auto;
+    width: 212px;
+    height: 192px;
+    background-color: #dedbdb; 
+    border-radius: 3px;  
 }
-.notificationCont {
+.notificationInside {
+    position: absolute;
+    margin: auto;
+    top: 1px;
+    left: 1px;
+    width: 210px;
+    height: 190px;
+    background-color: #fcfafa; 
+    border-radius: 3px;
+}
+.notificationInside > h6 {
     width: 170px;
     height: 145px;
-    padding: 22px;
+    margin-top: 0;
+    padding: 20px;
     text-align: justify;
 }
-.notificationCont:before {
+.triangle {
+    position: absolute;
+    width:0;
+    top: 190px;
+    left: 90px;
+    border-top:solid 28px #dedbdb;
+    border-right:solid 14px transparent;
+    border-left:solid 14px transparent;
+}
+.empty {
+    position: absolute;
+    top:-28px;
+    left:-13px;
+    width:0;
+    border-top:solid 26px #fcfafa;
+    border-right:solid 13px transparent;
+    border-left:solid 13px transparent;
+}
+.notificationInside > h6:before {
     content: "“ \a0"; 
 }
-.notificationCont:after {  
+.notificationInside > h6:after {  
     content: "\a0 ”";  
 }  
-.authorName {
-    margin-top: 35px;
+.testimonal > h6 {
+    margin-top: 50px;
     text-align: center;
 }
 .authorPosition {
