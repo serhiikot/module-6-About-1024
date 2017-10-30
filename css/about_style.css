@@ -163,11 +163,11 @@ main {
     background-color: #fcfafa; 
     border-radius: 3px;
 }
-.notificationCont {
+.notificationInside > h6 {
     width: 170px;
     height: 145px;
-    margin: 0;
-    padding: 18px;
+    margin-top: 0;
+    padding: 20px;
     text-align: justify;
 }
 .triangle {
@@ -188,10 +188,10 @@ main {
     border-right:solid 13px transparent;
     border-left:solid 13px transparent;
 }
-.notificationCont:before {
+.notificationInside > h6:before {
     content: "“ \a0"; 
 }
-.notificationCont:after {  
+.notificationInside > h6:after {  
     content: "\a0 ”";  
 }  
 .testimonal > h6 {
