@@ -3,7 +3,7 @@
 main {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: stretch;
     max-width: 1024px;
@@ -23,17 +23,19 @@ main {
 .rightColumn {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 26%;
+    padding-left: 15px;
 }
 
 /* Информационные блоки */
 .agencyProfCont,
 .princilesList {
-    height: 515px;
-}   
+    height: 580px;
+    border-bottom: 1px solid #dedbdb;
+} 
 .offerInfo,
 .testimonal {
-    margin-top: 110px;
+    margin-top: 50px;
 }
 
 /* Заголовки */
@@ -60,7 +62,9 @@ main {
     color: #263555;
     text-transform: uppercase;
 }
-
+.topHeader {
+    margin-left: 15px;
+}
 /* Контент */
 /* Общее */
 .leftColumn p,
@@ -71,13 +75,6 @@ main {
     color: #4e5050;
     text-align: justify;
     text-indent: 20px;
-}
-.princilesList p {
-    text-indent: 0;
-}
-.princilesList ul {
-    padding: 0;
-    list-style: none;
 }
 
 /* Блок AGENCY PROFILE  */
@@ -90,9 +87,18 @@ main {
 }
 
 /* Блок OUR PRINCIPLES  */
-.principleHeaders,
-.principleInfo {
-    margin-left: 40px;
+.princilesList p {
+    text-indent: 0;
+    margin-left: 20px;
+
+}
+.princilesList ul {
+    margin-left: 20px;
+    padding: 0;
+    list-style: none;
+}
+.princilesList h6 {
+    margin-left: 30px;
 }
 .principItem1:before,
 .principItem2:before,
